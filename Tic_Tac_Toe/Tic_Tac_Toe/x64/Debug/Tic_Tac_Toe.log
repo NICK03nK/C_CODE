@@ -1,0 +1,12 @@
+﻿  Tic_Tac_Toe.c
+D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe.c(109,1): warning C4142: "WinCheck": 类型的良性重定义
+D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe.h(18): message : 参见“WinCheck”的声明
+D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe.c(115,22): warning C4098: “WinCheck”:“void”函数返回值
+D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe.c(123,22): warning C4098: “WinCheck”:“void”函数返回值
+D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe.c(128,21): warning C4098: “WinCheck”:“void”函数返回值
+D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe.c(132,21): warning C4098: “WinCheck”:“void”函数返回值
+D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe.c(136,13): warning C4098: “WinCheck”:“void”函数返回值
+D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe.c(138,12): warning C4098: “WinCheck”:“void”函数返回值
+  test.c
+  正在生成代码...
+  Tic_Tac_Toe.vcxproj -> D:\VS 2022\Gitee_warehouse\bit_code\Tic_Tac_Toe\x64\Debug\Tic_Tac_Toe.exe
