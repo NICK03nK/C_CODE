@@ -4,8 +4,10 @@
 #include<string.h>
 #include<assert.h>
 #include<stdlib.h>
+#include<errno.h>
 
-#define MAX_data 100
+#define Cap 3
+#define Inc_sz 2
 #define MAX_name 20
 #define MAX_sex 10
 #define MAX_number 12
@@ -22,8 +24,9 @@ typedef struct PeopInfo
 
 typedef struct Contact
 {
-	PeopInfo data[MAX_data];
+	PeopInfo* data;
 	int count;
+	int capacity;
 }Contact;
 
 void InitContact(Contact* pc);
@@ -39,3 +42,5 @@ void ModifyContact(Contact* pc);
 void SortContact(const Contact* pc);
 
 void ShowContact(const Contact* pc);
+
+void DestroyContact(Contact* pc);

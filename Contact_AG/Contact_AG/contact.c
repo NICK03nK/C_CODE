@@ -5,8 +5,14 @@
 void InitContact(Contact* pc)
 {
 	assert(pc);
+	pc->data = (PeopInfo*)calloc(Cap, sizeof(PeopInfo));
 	pc->count = 0;
-	memset(pc->data, 0, sizeof(pc->data));
+	pc->capacity = Cap;
+	if (pc->data == NULL)
+	{
+		printf("InitContact:>%s", strerror(errno));
+		return;
+	}
 }
 
 int Find_By_Name(Contact* pc,char k_name[])
@@ -23,13 +29,28 @@ int Find_By_Name(Contact* pc,char k_name[])
 	return -1;
 }
 
+void CheckCapacity(Contact* pc)
+{
+	Contact* tmp = realloc(pc->data, (pc->capacity + Inc_sz) * sizeof(PeopInfo));
+	if (tmp == NULL)
+	{
+		printf("CheckCapacity:>%s", strerror(errno));
+		return;
+	}
+	else
+	{
+		pc->data = tmp;
+		pc->capacity += Inc_sz;
+		printf("\n<增容成功>\n\n");
+	}
+}
+
 void AddContact(Contact* pc)
 {
 	assert(pc);
-	if (pc->count == MAX_data)
+	if (pc->count == pc->capacity)
 	{
-		printf("\n<通讯录已满，无法添加联系人>\n\n");
-		return;
+		CheckCapacity(pc);
 	}
 	printf("请输入联系人的姓名>>");
 	scanf("%s", pc->data[pc->count].name);
@@ -177,4 +198,11 @@ void ShowContact(const Contact* pc)
 	{
 		printf("%-10s\t%-5s\t%-5d\t%-13s\t%-10s\n\n", pc->data[i].name, pc->data[i].sex, pc->data[i].age, pc->data[i].number, pc->data[i].address);
 	}
+}
+
+void DestroyContact(Contact* pc)
+{
+	assert(pc);
+	free(pc->data);
+	pc->data = NULL;
 }
