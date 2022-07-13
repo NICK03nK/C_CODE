@@ -1,0 +1,4 @@
+﻿  contact.c
+D:\VS 2022\GitHub_repository\C_CODE\Contact_AG\Contact_AG\contact.c(85,27): warning C4090: “函数”: 不同的“const”限定符
+D:\VS 2022\GitHub_repository\C_CODE\Contact_AG\Contact_AG\contact.c(167,16): warning C4090: “函数”: 不同的“const”限定符
+  Contact_AG.vcxproj -> D:\VS 2022\GitHub_repository\C_CODE\Contact_AG\x64\Debug\Contact_AG.exe
