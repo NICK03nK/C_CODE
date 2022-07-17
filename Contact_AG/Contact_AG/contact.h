@@ -43,4 +43,6 @@ void SortContact(const Contact* pc);
 
 void ShowContact(const Contact* pc);
 
+void SaveContactData(const Contact* pc);
+
 void DestroyContact(Contact* pc);

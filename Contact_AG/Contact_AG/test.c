@@ -54,6 +54,7 @@ int main()
 			ShowContact(&con);
 			break;
 		case EXIT:
+			SaveContactData(&con);
 			DestroyContact(&con);
 			printf("\n<ÍË³ö³ÌÐò>\n\n");
 			break;

@@ -1,6 +1,3 @@
 ﻿  contact.c
-D:\VS 2022\GitHub_repository\C_CODE\Contact_AG\Contact_AG\contact.c(42,17): warning C4133: “=”: 从“Contact *”到“PeopInfo *”的类型不兼容
-D:\VS 2022\GitHub_repository\C_CODE\Contact_AG\Contact_AG\contact.c(106,27): warning C4090: “函数”: 不同的“const”限定符
-  test.c
-  正在生成代码...
+D:\VS 2022\GitHub_repository\C_CODE\Contact_AG\Contact_AG\contact.c(126,27): warning C4090: “函数”: 不同的“const”限定符
   Contact_AG.vcxproj -> D:\VS 2022\GitHub_repository\C_CODE\Contact_AG\x64\Debug\Contact_AG.exe
